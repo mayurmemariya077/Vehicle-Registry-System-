@@ -1,123 +1,116 @@
-# Vehicle-Registry-System-# Vehicle Registry System
 
-## Project Description
 
-Vehicle Registry System is a C++ Object-Oriented Programming (OOP) based application that manages different types of vehicles. The system allows users to add, display, search, and count vehicles using concepts such as Inheritance, Multilevel Inheritance, Multiple Inheritance, Polymorphism, Static Members, and Dynamic Memory Allocation.
+# 🚗 Vehicle Registry System
 
----
+![C++](https://img.shields.io/badge/Language-C%2B%2B-blue)
+![OOP](https://img.shields.io/badge/Concept-OOP-success)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-Educational-orange)
 
-## Features
-
-* Add different types of vehicles:
-
-  * Car
-  * Electric Car
-  * Sports Car
-  * Flying Car
-  * Sedan
-  * SUV
-
-* Display all registered vehicles.
-
-* Search vehicles by Vehicle ID.
-
-* Count total vehicles using a static member.
-
-* Demonstrates runtime polymorphism using virtual functions.
-
-* Uses inheritance hierarchy for code reusability.
+> 📚 A comprehensive Vehicle Management System built using **C++ Object-Oriented Programming** concepts.
 
 ---
 
-## OOP Concepts Used
+## 🌟 Project Highlights
 
-### 1. Encapsulation
+✨ Menu Driven Application
 
-Vehicle details are stored inside classes using data members and member functions.
+🚗 Supports Multiple Vehicle Types
 
-### 2. Inheritance
+⚡ Electric Vehicle Management
 
-* Car inherits from Vehicle.
-* ElectricCar inherits from Car.
-* SportsCar inherits from ElectricCar.
-* Sedan and SUV inherit from Car.
+🏎 Sports Car Features
 
-### 3. Multiple Inheritance
+✈️ Flying Car Simulation
 
-FlyingCar inherits from both:
+🔍 Search Vehicle by ID
 
-* Car
-* Aircraft
+📊 Track Total Registered Vehicles
 
-### 4. Polymorphism
-
-Virtual display() function is overridden in derived classes.
-
-### 5. Static Data Member
-
-totalVehicles keeps track of the total number of vehicles created.
-
-### 6. Dynamic Memory Allocation
-
-Objects are created using the new operator and stored in the registry.
+🎯 Demonstrates Advanced OOP Concepts
 
 ---
 
-## Class Structure
+## 🛠️ OOP Concepts Covered
 
-### Vehicle
+| 💡 Concept                | ✅ Used |
+| ------------------------- | ------ |
+| Encapsulation             | ✔      |
+| Inheritance               | ✔      |
+| Multilevel Inheritance    | ✔      |
+| Hierarchical Inheritance  | ✔      |
+| Multiple Inheritance      | ✔      |
+| Runtime Polymorphism      | ✔      |
+| Constructors              | ✔      |
+| Destructors               | ✔      |
+| Static Members            | ✔      |
+| Dynamic Memory Allocation | ✔      |
 
-Base class containing:
+---
+
+## 🏗️ Inheritance Structure
+
+```text
+Vehicle
+│
+└── Car
+    │
+    ├── ElectricCar
+    │      │
+    │      └── SportsCar
+    │
+    ├── Sedan
+    │
+    └── SUV
+
+Aircraft
+   │
+   └── FlyingCar
+       ▲
+       │
+      Car
+```
+
+---
+
+## 🚘 Supported Vehicle Types
+
+### 🚗 Car
 
 * Vehicle ID
 * Manufacturer
 * Model
 * Year
-
-### Car
-
-Derived from Vehicle and adds:
-
 * Fuel Type
 
-### ElectricCar
+### ⚡ Electric Car
 
-Derived from Car and adds:
+* All Car Features
+* Battery Capacity (kWh)
 
-* Battery Capacity
+### 🏎 Sports Car
 
-### SportsCar
+* All Electric Car Features
+* Top Speed (km/h)
 
-Derived from ElectricCar and adds:
+### ✈️ Flying Car
 
-* Top Speed
+* All Car Features
+* Flight Range (km)
 
-### Aircraft
+### 🚘 Sedan
 
-Contains:
+* Passenger Vehicle Category
 
-* Flight Range
+### 🚙 SUV
 
-### FlyingCar
-
-Derived from Car and Aircraft.
-
-### Sedan
-
-Derived from Car.
-
-### SUV
-
-Derived from Car.
-
-### VehicleRegistry
-
-Manages all vehicle records using an array of Vehicle pointers.
+* Sport Utility Vehicle Category
 
 ---
 
-## Menu Options
+## 📋 Menu Options
 
+```text
 1. Add Car
 2. Add Electric Car
 3. Add Sports Car
@@ -127,79 +120,97 @@ Manages all vehicle records using an array of Vehicle pointers.
 7. View All Vehicles
 8. Search Vehicle By ID
 9. Total Vehicles
-10. Exit
+0. Exit
+```
 
 ---
 
-## Sample Output
+## 🚀 Getting Started
 
-===== VEHICLE REGISTRY SYSTEM =====
+### 📥 Clone Repository
 
-1. Add Car
+```bash
+git clone <repository-url>
+```
 
-2. Add Electric Car
+### ⚙️ Compile
 
-3. Add Sports Car
-
-4. Add Flying Car
-
-5. Add Sedan
-
-6. Add SUV
-
-7. View All Vehicles
-
-8. Search Vehicle By ID
-
-9. Total Vehicles
-
-10. Exit
-
-Enter Choice : 1
-
-ID : 101
-
-Manufacturer : Toyota
-
-Model : Corolla
-
-Year : 2024
-
-Fuel Type : Petrol
-
----
-
-## Requirements
-
-* C++ Compiler (GCC, MinGW, Turbo C++, Visual Studio, CodeBlocks, etc.)
-* C++11 or higher
-
----
-
-## Compilation
-
-Using g++ compiler:
-
+```bash
 g++ VehicleRegistry.cpp -o VehicleRegistry
+```
 
-Run:
+### ▶️ Run
 
+```bash
 ./VehicleRegistry
+```
 
 ---
 
-## Author
+## 📸 Sample Output
 
-Name: ___________________
+```text
+Vehicle Found
 
-Enrollment No: ___________________
-
-Course: Object Oriented Programming (C++)
-
-Project Title: Vehicle Registry System
+Vehicle ID : 101
+Manufacturer : Tesla
+Model : ModelS
+Year : 2025
+Fuel Type : Electric
+Battery Capacity : 100 kWh
+Top Speed : 320 km/h
+```
 
 ---
 
-## Conclusion
+## 🎯 Learning Objectives
 
-This project successfully demonstrates various OOP concepts such as inheritance, polymorphism, multiple inheritance, encapsulation, static members, and dynamic memory allocation. It provides an efficient way to manage different types of vehicles through a menu-driven application.
+📌 Understand Object-Oriented Programming
+
+📌 Practice Inheritance & Polymorphism
+
+📌 Learn Dynamic Memory Allocation
+
+📌 Implement Real-world Class Relationships
+
+📌 Develop Menu Driven Applications
+
+---
+
+## 📈 Project Statistics
+
+🔹 Total Classes: 9+
+
+🔹 Vehicle Types: 6
+
+🔹 OOP Concepts: 10+
+
+🔹 Language: C++
+
+---
+
+## 👨‍💻 Developer
+
+### Mayur Memariya
+
+🎓 Object Oriented Programming Project
+
+💻 C++ Developer
+
+---
+
+## ⭐ Support
+
+If you found this project useful:
+
+⭐ Star this Repository
+
+🍴 Fork this Repository
+
+📢 Share with Friends
+
+---
+
+### 🚀 Made with C++ & OOP Concepts
+
+### ❤️ Happy Coding!
